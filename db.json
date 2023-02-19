@@ -1,0 +1,105 @@
+{
+  "categoryProjects": [
+    {
+      "id": "f814c1c2-baa7-413e-beb2-facacd1e528b",
+      "name": "Website"
+    },
+    {
+      "id": "a7af54ae-c1fc-4f62-94f4-cbc63f199f7a",
+      "name": "Mobile App"
+    },
+    {
+      "id": "08210c8b-32b3-468c-ab4f-e776682da64f",
+      "name": "Deskstop"
+    }
+  ],
+  "categoryPosts": [
+    {
+      "id": "e1d4d77e-6268-46f6-a929-cbed37d80836",
+      "name": "Cau Hoi Phong Van Javascript 2"
+    },
+    {
+      "id": "b38539d8-2488-49e7-89f0-621619ea0544",
+      "name": "Cau Hoi Phong Van CSS"
+    }
+  ],
+  "posts": [
+    {
+      "id": "e4ab6b2e-d10d-466b-ab84-9b9eb32e1fd4",
+      "createdAt": "2023-02-15T08:54:35+07:00",
+      "updatedAt": "2023-02-19T10:13:55+07:00",
+      "title": "Bộ câu hỏi phỏng vấn Javascript phần 1",
+      "content": "Kể tên các kiểu dữ liệu cơ bản trong Javascript\nKiểu dữ liệu nguyên thủy:\n\nNumber: Các số nguyên hoặc số thực. Ví dụ: 5 hoặc 5.05\nString: là các text như “Các kiểu dữ liệu trong JavaScript”, text có thể có một hoặc nhiều ký tự.\nBoolean: chỉ có 2 giá trị là true hoặc false.\nUndefine: là các giá trị không xác định.\nNull: đơn giản là không có giá trị nào cả.\nSymbol: mới được giới thiệu trong ES6. Nó lưu trữ các giá trị duy nhất và ẩn danh\nKiểu dữ liệu không nguyên thủy (tham chiếu):\n\nObject: Thể hiện một đối tượng và các thuộc tính có thể truy cập đến.\nArray: Nhóm các giá trị giống nhau.\nRegExp: Biểu thức chính quy.",
+      "authorName": "Dev Quen",
+      "categoryPostId": "b38539d8-2488-49e7-89f0-621619ea0544",
+      "images": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676426075/vwac2dzoyex3disi9q1o.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676776433/t74qfevt9lzo9vkfutwo.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676776434/sxdohfqlo2hooslvkeu1.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676776435/yii3bbnektkr8bc2bdjr.png"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "97b30aa1-c526-4758-994b-4e583632c7da",
+      "createdAt": "2023-02-15T11:37:17+07:00",
+      "updatedAt": "2023-02-15T21:07:31+07:00",
+      "name": "Dev Food",
+      "description": "Day la mot du an ca nhan do toi va team thuc hien",
+      "url": "https://github.com/typicode/json-server",
+      "repository": "https://github.com/typicode/json-server",
+      "technology": "React, NodeJS, Mysql",
+      "categoryProjectId": "f814c1c2-baa7-413e-beb2-facacd1e528b",
+      "images": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676435836/kzddtjs6lfgrz3bsw5g3.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676435837/bijfe3rexyjanu0ikmym.png"
+      ]
+    },
+    {
+      "id": "381d5703-c487-4efb-8504-0ff421b98b88",
+      "createdAt": "2023-02-15T11:40:24+07:00",
+      "updatedAt": "2023-02-15T21:08:30+07:00",
+      "name": "Landing Page",
+      "description": "Du An Ca Nhan",
+      "url": "https://github.com/typicode/json-server",
+      "repository": "https://github.com/typicode/json-server",
+      "technology": "React, NodeJS, Mysql",
+      "categoryProjectId": "a7af54ae-c1fc-4f62-94f4-cbc63f199f7a",
+      "images": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676436022/jxaqpawanertwzjnevgj.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676436023/ymvqzexd7zjedxza8dou.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676436024/ok2thw23ixzv6xajnmli.png"
+      ]
+    },
+    {
+      "id": "04374920-39cb-431e-ab3e-3fa56655c170",
+      "createdAt": "2023-02-15T12:56:45+07:00",
+      "updatedAt": "2023-02-15T13:06:38+07:00",
+      "name": "Du An Mau",
+      "description": "abc",
+      "url": "https://github.com/typicode/json-server",
+      "repository": "https://github.com/typicode/json-server",
+      "technology": "React, Nodejs, Mongodb",
+      "categoryProjectId": "f814c1c2-baa7-413e-beb2-facacd1e528b",
+      "images": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676440594/xu1fpifqtixwvm01y4cq.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676440602/xdfacpnkschm2rjvezez.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676440605/cmnnhp2mzjn7ilzo9sbi.png"
+      ]
+    },
+    {
+      "id": "3e9cdb57-6656-46d9-8dfb-5bd63fd99572",
+      "createdAt": "2023-02-19T16:24:19+07:00",
+      "updatedAt": "2023-02-19T16:24:19+07:00",
+      "name": "",
+      "description": "",
+      "url": "",
+      "repository": "",
+      "technology": "",
+      "categoryProjectId": "f814c1c2-baa7-413e-beb2-facacd1e528b",
+      "images": []
+    }
+  ],
+  "comments": []
+}

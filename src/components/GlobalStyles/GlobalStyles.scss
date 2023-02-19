@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+	--text-white: #ffffff;
+	--text-gray: #dee2e6;
+	--text-pink: #ffc9c9;
+
+	--color-bg-100: #2b2b31;
+	--color-bg-200: #28282d;
+	--color-bg-300: #121212;
+	--color-gradient: linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%);
+
+	--color-info: #3796f6;
+	--color-danger: #ec547a;
+	--color-success: #5bceae;
+	--rgba-info: rgba(55, 150, 246, 0.08);
+	--rgba-danger: rgba(236, 84, 122, 0.08);
+	--rgba-success: rgba(91, 206, 174, 0.08);
+
+	--border-color: #ffe3e3;
+
+	--bg-overlay: rgba(43, 43, 49, 0.8);
+	--box-shadow: 0 0 20px 0 rgb(238 156 167 / 50%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button,
+html {
+	font-size: 62.5%;
+	font-family: "Quicksand", sans-serif;
+}
+
+body {
+	background-color: var(--color-bg-100);
+}
