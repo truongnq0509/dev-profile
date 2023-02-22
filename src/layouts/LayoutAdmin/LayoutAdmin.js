@@ -2,6 +2,7 @@ import { html } from "../../lib"
 import classNames from "classnames/bind"
 import styles from "./LayoutAdmin.module.scss"
 import { GlobalStyles } from "../../components/GlobalStyles"
+import { getLocalStorage } from "../../utils/fnc"
 
 const cx = classNames.bind(styles)
 
@@ -14,7 +15,6 @@ const CATEGORY = [
 		<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 20H7C5.89543 20 5 19.1046 5 18V10.9199C5 10.336 5.25513 9.78132 5.69842 9.40136L10.6984 5.11564C11.4474 4.47366 12.5526 4.47366 13.3016 5.11564L18.3016 9.40136C18.7449 9.78132 19 10.336 19 10.9199V18C19 19.1046 18.1046 20 17 20H15M9 20V14C9 13.4477 9.44772 13 10 13H14C14.5523 13 15 13.4477 15 14V20M9 20H15" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
 		`,
 	},
-
 	{
 		id: 2,
 		title: "Bài Viết",
@@ -49,10 +49,10 @@ const CATEGORY = [
 	},
 	{
 		id: 6,
-		title: "Menu",
-		to: "admin/menu",
+		title: "Profile",
+		to: "admin/profile",
 		icon: `
-		<svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 8H13.75M5 12H19M10.25 16L19 16" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+		<svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.4399 19.05L15.9599 20.57L18.9999 17.53" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12.16 10.87C12.06 10.86 11.94 10.86 11.83 10.87C9.44997 10.79 7.55997 8.84 7.55997 6.44C7.54997 3.99 9.53997 2 11.99 2C14.44 2 16.43 3.99 16.43 6.44C16.43 8.84 14.53 10.79 12.16 10.87Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11.99 21.8101C10.17 21.8101 8.36004 21.3501 6.98004 20.4301C4.56004 18.8101 4.56004 16.1701 6.98004 14.5601C9.73004 12.7201 14.24 12.7201 16.99 14.5601" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
 		`,
 	},
 ]
@@ -65,38 +65,6 @@ const LayoutAdmin = (component, router) => {
 			<div class="${cx("sidebar")}">
 				<div class="${cx("logo")}">
 					<h1>Dev Oii Bug</h1>
-				</div>
-				<div class="${cx("user")}">
-					<div class="${cx("user__avatar")}">
-						<svg
-							width="64px"
-							height="64px"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-							<g id="SVGRepo_iconCarrier">
-								<path
-									d="M16 8C16 10.2091 14.2091 12 12 12C9.79086 12 8 10.2091 8 8C8 5.79086 9.79086 4 12 4C14.2091 4 16 5.79086 16 8Z"
-									stroke="#ffffff"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								></path>
-								<path
-									d="M14.6824 14H9.31765C8.83513 14 8.59387 14 8.37806 14.0461C7.63116 14.2056 6.9853 14.7661 6.62346 15.569C6.51891 15.8009 6.44262 16.0765 6.29003 16.6278C6.10668 17.2901 6.01501 17.6213 6.00261 17.8884C5.95888 18.8308 6.46818 19.6817 7.22441 19.9297C7.43875 20 7.72864 20 8.30844 20H15.6916C16.2714 20 16.5613 20 16.7756 19.9297C17.5318 19.6817 18.0411 18.8308 17.9974 17.8884C17.985 17.6213 17.8933 17.2901 17.71 16.6278C17.5574 16.0765 17.4811 15.8009 17.3765 15.569C17.0147 14.7661 16.3688 14.2056 15.6219 14.0461C15.4061 14 15.1649 14 14.6824 14Z"
-									stroke="#ffffff"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								></path>
-							</g>
-						</svg>
-					</div>
-					<div class="${cx("user__info")}">
-						<h5>Admin</h5>
-						<h4>Dev Ơii Bug</h4>
-					</div>
 				</div>
 				<nav class="${cx("nav")}">
 					<ul>

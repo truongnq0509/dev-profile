@@ -1,12 +1,13 @@
 import classNames from "classnames/bind"
 import Button from "../../../components/Button/Button"
+import { Loading } from "../../../components/Loading"
 import { html, router, useEffect, useState, useTitle } from "../../../lib"
 import {
-	getCategoryPosts as apiGetCategoryPosts,
 	deleteCategoryPost as apiDeleteCategoryPost,
+	getCategoryPosts as apiGetCategoryPosts,
 } from "../../../services/categoryPostService"
 import styles from "./CategoryPosts.module.scss"
-import { Loading } from "../../../components/Loading"
+import { ToastMessage } from "../../../components/ToastMessage"
 
 const cx = classNames.bind(styles)
 
@@ -36,10 +37,23 @@ const CategoryPosts = () => {
 
 				if (confirm) {
 					const newCategories = categories.filter((category) => category.id != id)
-					setIsLoading(false)
+					setIsLoading(true)
 					await apiDeleteCategoryPost(id)
 					setCategories(newCategories)
-					setIsLoading(true)
+					setIsLoading(false)
+					ToastMessage({
+						title: "Thành Công",
+						type: "success",
+						content: "Đã xóa danh mục thành công",
+						duration: 1000,
+					})
+				} else {
+					ToastMessage({
+						title: "Thất Bại",
+						type: "danger",
+						content: "Hành động thực hiện đã thất bại!!!",
+						duration: 1000,
+					})
 				}
 			})
 		}

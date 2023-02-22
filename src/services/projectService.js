@@ -2,7 +2,7 @@ import * as httpResquest from "../utils/httpResquest"
 
 export const getProjects = async () => {
 	try {
-		const response = await httpResquest.get("/projects?_expand=categoryProject")
+		const response = await httpResquest.get("/projects?_expand=categoryProject&_sort=createdAt&_order=desc")
 		return response
 	} catch (error) {
 		console.log(error)

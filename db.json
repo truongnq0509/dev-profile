@@ -1,105 +1,457 @@
 {
   "categoryProjects": [
     {
-      "id": "f814c1c2-baa7-413e-beb2-facacd1e528b",
-      "name": "Website"
+      "id": "199d32cf-c9b4-4011-93ab-fc95c9cea229",
+      "name": "Web Design"
     },
     {
-      "id": "a7af54ae-c1fc-4f62-94f4-cbc63f199f7a",
+      "id": "87434cd8-f921-482f-b422-39c89662ec51",
+      "name": "Web Development"
+    },
+    {
+      "id": "2e69100f-a80e-4528-a601-1617aacd7a05",
       "name": "Mobile App"
-    },
-    {
-      "id": "08210c8b-32b3-468c-ab4f-e776682da64f",
-      "name": "Deskstop"
     }
   ],
   "categoryPosts": [
     {
-      "id": "e1d4d77e-6268-46f6-a929-cbed37d80836",
-      "name": "Cau Hoi Phong Van Javascript 2"
+      "id": "f9a3a902-fa87-4d42-9d59-dbf37fa96446",
+      "name": "Javascript"
     },
     {
-      "id": "b38539d8-2488-49e7-89f0-621619ea0544",
-      "name": "Cau Hoi Phong Van CSS"
+      "id": "a260336c-c95b-4e8b-a39a-ef8a1c5a6ca6",
+      "name": "ReactJs"
+    },
+    {
+      "id": "8927c854-77c7-41c0-8eb9-cc02f2643cf6",
+      "name": "HTML"
+    },
+    {
+      "id": "efea74b6-2ce5-4fd4-a69a-f36a652e7a5e",
+      "name": "CSS"
+    },
+    {
+      "id": "d0f2aca9-5485-45aa-83ea-03716ee5559c",
+      "name": "PHP"
     }
   ],
   "posts": [
     {
-      "id": "e4ab6b2e-d10d-466b-ab84-9b9eb32e1fd4",
-      "createdAt": "2023-02-15T08:54:35+07:00",
-      "updatedAt": "2023-02-19T10:13:55+07:00",
+      "id": "0057f190-9412-4caa-b199-d751312b1062",
+      "createdAt": "2023-02-22T01:38:17+07:00",
+      "updatedAt": "2023-02-22T01:38:17+07:00",
       "title": "Bộ câu hỏi phỏng vấn Javascript phần 1",
-      "content": "Kể tên các kiểu dữ liệu cơ bản trong Javascript\nKiểu dữ liệu nguyên thủy:\n\nNumber: Các số nguyên hoặc số thực. Ví dụ: 5 hoặc 5.05\nString: là các text như “Các kiểu dữ liệu trong JavaScript”, text có thể có một hoặc nhiều ký tự.\nBoolean: chỉ có 2 giá trị là true hoặc false.\nUndefine: là các giá trị không xác định.\nNull: đơn giản là không có giá trị nào cả.\nSymbol: mới được giới thiệu trong ES6. Nó lưu trữ các giá trị duy nhất và ẩn danh\nKiểu dữ liệu không nguyên thủy (tham chiếu):\n\nObject: Thể hiện một đối tượng và các thuộc tính có thể truy cập đến.\nArray: Nhóm các giá trị giống nhau.\nRegExp: Biểu thức chính quy.",
-      "authorName": "Dev Quen",
-      "categoryPostId": "b38539d8-2488-49e7-89f0-621619ea0544",
-      "images": [
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676426075/vwac2dzoyex3disi9q1o.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676776433/t74qfevt9lzo9vkfutwo.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676776434/sxdohfqlo2hooslvkeu1.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676776435/yii3bbnektkr8bc2bdjr.png"
+      "content": "Kể tên các kiểu dữ liệu cơ bản trong Javascript\nKiểu dữ liệu nguyên thủy:\n\nNumber: Các số nguyên hoặc số thực. Ví dụ: 5 hoặc 5.05\nString: là các text như “Các kiểu dữ liệu trong JavaScript”, text có thể có một hoặc nhiều ký tự.\nBoolean: chỉ có 2 giá trị là true hoặc false.\nUndefine: là các giá trị không xác định.\nNull: đơn giản là không có giá trị nào cả.\nSymbol: mới được giới thiệu trong ES6. Nó lưu trữ các giá trị duy nhất và ẩn danh\nKiểu dữ liệu không nguyên thủy (tham chiếu):\n\nObject: Thể hiện một đối tượng và các thuộc tính có thể truy cập đến.\nArray: Nhóm các giá trị giống nhau.\nRegExp: Biểu thức chính quy.\nGiải thích về ép kiểu ngầm trong JavaScript?\nÉp kiểu ngầm trong javascript là sự chuyển đổi tự động của giá trị từ kiểu dữ liệu này sang kiểu khác. Nó xảy ra khi thực hiện một biểu thức với các kiểu dữ liệu khác nhau.\n\nÉp kiểu String\n\nÉp kiểu string xảy ra khi dùng toán tử +. Một số cộng với một chuỗi, kiểu số sẽ bị ép thành kiểu chuỗi.\n\nVí dụ:\n\nvar x = 3;\nvar y = \"3\";\nx + y; // Returns \"33\"\nvar x = 24;\nvar y = \"Hello\";\nx + y; // Returns \"24Hello\";\nĐể hiểu về hai ví dụ khi ta cộng một số vào chuỗi, thì khi JavaScript thấy biểu thức x+y với hai kiểu khác nhau (một số và một chuỗi), nó chuyển đổi kiểu số thành chuỗi để thực hiện hành động. Sau khi chuyển đổi, cả hai biến đều là kiểu chuỗi, thao tác + lúc này sẽ thành phép nối chuỗi kết quả là ra chuỗi \"33\" và \"24Hello\".\n\nNgược lại, khi thực hiện phép toán -, thì chuỗi lại bị ép kiểu ngầm thành số. Ví dụ:\n\nvar x = 3;\nVar y = \"3\";\nx - y    //Returns 0 since the variable y (string type) is converted to a number type\nÉp kiểu Boolean\n\nÉp kiểu boolean xảy ra khi sử dụng các toán tử logic, lệnh if hay kiểm tra vòng lặp. Để hiểu về ép kiểu logic, ta cần hiểu về giá trị truthy và falsy.\n\nGiá trị truthy là cái sẽ được ép kiểu thành true. Còn falsy sẽ được ép kiểu thành false.\n\nTất cả các giá trị ngoại trừ 0, 0n, -0, \"\", null, undefined, và NaN thì đều là truthy.\n\nCâu lệnh If:",
+      "authorName": "Truong Dev",
+      "categoryPostId": "f9a3a902-fa87-4d42-9d59-dbf37fa96446",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004591/bxdhyhokpujct0zswsro.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004626/mqmn8xirpouvwxcw7pqa.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004627/ugucv6dib0dfhdqs1l6a.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004628/ojoy0obv1iqti1dd2ebl.png"
+      ]
+    },
+    {
+      "id": "e26dcef7-1231-4269-8080-8ddc5175e425",
+      "createdAt": "2023-02-22T01:39:42+07:00",
+      "updatedAt": "2023-02-22T01:39:42+07:00",
+      "title": "Bộ câu hỏi phỏng vấn Javascript phần 2",
+      "content": "Closure trong javascript là gì, cho ví dụ?\nTrong javascript, closure là một chức năng có quyền truy cập vào phạm vi cha, ngay cả sau khi scope đã đóng.\n\nĐầu tiên bạn phải hiểu về scope như đã nói ở trên? Scope chính là tuổi thọ của một biến trong javascript. Bạn có thể thấy trong đó một biến được định nghĩa đóng một vai trò lớn trong khoảng thời gian của biến đó và các hàm trong chương trình của bạn có quyền truy cập vào đó.\n\nVí dụ:\n\nKhi sử dụng closure\n\nfunction newCounter() {\n  var count = 0;\n\n  return function () {\n    count += 1;\n    return count;\n  };\n}\n\nvar counter = newCounter();\n\nconsole.log(counter());\n// Output: 1\n\nconsole.log(counter());\n// Output: 2\n\nconsole.log(counter());\n// Output: 3\nKhông ai có thể truy cập được count ngoài function newCounter() nhưng function được trả về bởi newCounter vẫn có quyền truy cập count nếu chúng ta tiếp tục khai báo thêm những lần nữa. Điều đó có nghĩa là các biến thay đổi giá t",
+      "authorName": "Truong Dev",
+      "categoryPostId": "f9a3a902-fa87-4d42-9d59-dbf37fa96446",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004742/zlbqwdf0qysxabfgjkzo.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004780/tcm4boypnbiuwzhug3d5.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004781/a8lpr02uh5zlsjphpkpd.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004782/qjt3ehzj8wxd92nlk9v4.png"
+      ]
+    },
+    {
+      "id": "d13081a0-4d96-4828-b151-77d00174acae",
+      "createdAt": "2023-02-22T01:40:53+07:00",
+      "updatedAt": "2023-02-22T01:40:53+07:00",
+      "title": "Bộ câu hỏi phỏng vấn Javascript phần 3",
+      "content": "Coercion trong JavaScript là gì?\nĐây là cách thức chuyển đổi type của các giá trị trong Javascript, một cách ngầm định, còn rõ ràng thì gọi là type casting. Coercion chính là bí ẩn đằng sau những phép so sánh, phép toán không thể dị hơn của javascript.\n\nCoercion có 2 kiểu: explicit và implicit. Hiểu đơn giản là một cái chuyển kiểu dữ liệu một cách tường minh, mình có thế nhìn thấy được qua mã, trong khi đó kiểu kia thì coercion ngầm định.\n\nĐây là một ví dụ về explicit coercion:",
+      "authorName": "Truong Dev",
+      "categoryPostId": "f9a3a902-fa87-4d42-9d59-dbf37fa96446",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004810/a6vrr3d3kb7iq89lsudv.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004851/gftpzrm3mhnntjjraahf.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004852/lzh1hxba7u20cikwi8tr.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004853/dp5fabu0jtzk6ec6jnlt.png"
+      ]
+    },
+    {
+      "id": "70a75a30-d3bd-47ba-836a-787a6c55bcd6",
+      "createdAt": "2023-02-22T01:42:01+07:00",
+      "updatedAt": "2023-02-22T01:42:01+07:00",
+      "title": "Bộ câu hỏi phỏng vấn ReactJs phần 1",
+      "content": "DOM ảo là gì?\nDOM ảo (virtual DOM) là một đại diện được nằm trong bộ nhớ cho một thành phần HTML thật mà cấu thành nên giao diện cho chương trình. Khi một component được thông dịch lại (re-render), DOM ảo sẽ so sánh sự thay đổi với mô hình của DOM thật để tạo một danh sách cập nhật sẽ được thực hiện. Lợi ích chính của việc này là giúp tăng hiệu năng, chỉ tập trung vào các thay đổi nhỏ và thực sự cần thiết với DOM thật hơn là phải re-render lại một tập component lớn.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "a260336c-c95b-4e8b-a39a-ef8a1c5a6ca6",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004891/w2qnler9gpuhkr0dlf23.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004917/acdeuhy4l6l0zvwgdjkt.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004920/m985d9htrc9fshsmzmza.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004921/rkpzjhqr00wzfs8ooqps.png"
+      ]
+    },
+    {
+      "id": "0cecd3b2-653c-4dd6-96cb-8e88783c959e",
+      "createdAt": "2023-02-22T01:43:05+07:00",
+      "updatedAt": "2023-02-22T01:43:05+07:00",
+      "title": "Bộ câu hỏi phỏng vấn ReactJs phần 2",
+      "content": "React context là gì?\nContext API được cung cấp bởi React để giải quyết vấn đề chia sẻ state giữa các component trong một ứng dụng. Trước khi context (bối cảnh) được giới thiệu, giải pháp duy nhất là sử dụng một thư viện quản lý state, VD như Redux. Tuy nhiên, nhiều nhà phát triển cảm thấy Redux cung cấp nhiều thứ phức tạp không cần thiết, đặc biệt là với ứng dụng nhỏ.\n\nReact Context tồn tại để bạn không cần truyền dữ liệu một cách thủ công bằng việc sử dụng props ở tất cả các cấp của component. Context chia sử dữ liệu cho nhiều các component khác nhau. Việc truyền dữ liệu từ component cha xuống component con thông qua props là tương đối dài dòng và khó kiểm sóat so với việc sử dụng Context API. Bằng việc sử dụng Context API, chúng ta không còn cần phải truyền các dữ liệu muốn chia sẻ với nhau thông qua việc dùng props.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "a260336c-c95b-4e8b-a39a-ef8a1c5a6ca6",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004947/ccppcrcvhoiutcmbq40f.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004983/zalu3pujusppb2yzz0lj.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004984/e08rokjl7lp7tixtujdz.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677004985/wgtjkewwp5ppow28woyw.png"
+      ]
+    },
+    {
+      "id": "ba0f0383-d9d1-4086-b9e1-52f6de20adae",
+      "createdAt": "2023-02-22T01:44:40+07:00",
+      "updatedAt": "2023-02-22T01:44:40+07:00",
+      "title": "Bộ câu hỏi phỏng vấn ReactJs phần 3",
+      "content": "React context là gì?\nContext API được cung cấp bởi React để giải quyết vấn đề chia sẻ state giữa các component trong một ứng dụng. Trước khi context (bối cảnh) được giới thiệu, giải pháp duy nhất là sử dụng một thư viện quản lý state, VD như Redux. Tuy nhiên, nhiều nhà phát triển cảm thấy Redux cung cấp nhiều thứ phức tạp không cần thiết, đặc biệt là với ứng dụng nhỏ.\n\nReact Context tồn tại để bạn không cần truyền dữ liệu một cách thủ công bằng việc sử dụng props ở tất cả các cấp của component. Context chia sử dữ liệu cho nhiều các component khác nhau. Việc truyền dữ liệu từ component cha xuống component con thông qua props là tương đối dài dòng và khó kiểm sóat so với việc sử dụng Context API. Bằng việc sử dụng Context API, chúng ta không còn cần phải truyền các dữ liệu muốn chia sẻ với nhau thông qua việc dùng props.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "a260336c-c95b-4e8b-a39a-ef8a1c5a6ca6",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005046/etnahv0xye9mtcryhm2g.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005077/djaaijgti2pnkx9jidpp.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005077/hftzsqzfz8hu50cfgw79.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005078/zwcis51xdp5kpeowyeed.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005079/ld4kztzxaonnmbzzvhzs.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005080/yywhbjuplyxtzlnlahtt.png"
+      ]
+    },
+    {
+      "id": "4755bcf0-2f43-4e06-bf97-6d0b664f6cac",
+      "createdAt": "2023-02-22T01:45:45+07:00",
+      "updatedAt": "2023-02-22T01:45:45+07:00",
+      "title": "Bộ câu hỏi phỏng vấn HTML phần 1",
+      "content": "HTML là gì?\nHTML hay Ngôn ngữ đánh dấu siêu văn bản được Berners-Lee tạo ra vào năm 1991. Nó là một ngôn ngữ đánh dấu được sử dụng để tạo và cấu trúc các mẫu trang web hoặc các trang web để trình bày nội dung trên World Wide Web. Nó bao gồm một loạt các phần tử và các phần tử HTML cho trình duyệt biết cách hiển thị nội dung. HTML giúp làm cho văn bản trở nên tương tác và năng động hơn. Bạn có thể lưu một trang HTML bằng cách thêm .html hoặc .html vào tên trang web.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "8927c854-77c7-41c0-8eb9-cc02f2643cf6",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005120/ttrkma7owx5bmzxzmctw.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005143/j9vraavxewsaizlwgtu9.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005144/edha47m13tnnwazwqhub.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005145/lzusavkqfjtkwizkh5jw.png"
+      ]
+    },
+    {
+      "id": "bdd336e5-45b5-470e-b469-6661d9123bcd",
+      "createdAt": "2023-02-22T01:45:45+07:00",
+      "updatedAt": "2023-02-22T01:45:45+07:00",
+      "title": "Bộ câu hỏi phỏng vấn HTML phần 2",
+      "content": "HTML là gì?\nHTML hay Ngôn ngữ đánh dấu siêu văn bản được Berners-Lee tạo ra vào năm 1991. Nó là một ngôn ngữ đánh dấu được sử dụng để tạo và cấu trúc các mẫu trang web hoặc các trang web để trình bày nội dung trên World Wide Web. Nó bao gồm một loạt các phần tử và các phần tử HTML cho trình duyệt biết cách hiển thị nội dung. HTML giúp làm cho văn bản trở nên tương tác và năng động hơn. Bạn có thể lưu một trang HTML bằng cách thêm .html hoặc .html vào tên trang web.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "8927c854-77c7-41c0-8eb9-cc02f2643cf6",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005120/ttrkma7owx5bmzxzmctw.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005143/j9vraavxewsaizlwgtu9.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005144/edha47m13tnnwazwqhub.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005145/lzusavkqfjtkwizkh5jw.png"
+      ]
+    },
+    {
+      "id": "cb9ad5e9-e143-439a-be2c-44b5d8c81ec0",
+      "createdAt": "2023-02-22T01:45:45+07:00",
+      "updatedAt": "2023-02-22T01:45:45+07:00",
+      "title": "Bộ câu hỏi phỏng vấn HTML phần 3",
+      "content": "HTML là gì?\nHTML hay Ngôn ngữ đánh dấu siêu văn bản được Berners-Lee tạo ra vào năm 1991. Nó là một ngôn ngữ đánh dấu được sử dụng để tạo và cấu trúc các mẫu trang web hoặc các trang web để trình bày nội dung trên World Wide Web. Nó bao gồm một loạt các phần tử và các phần tử HTML cho trình duyệt biết cách hiển thị nội dung. HTML giúp làm cho văn bản trở nên tương tác và năng động hơn. Bạn có thể lưu một trang HTML bằng cách thêm .html hoặc .html vào tên trang web.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "8927c854-77c7-41c0-8eb9-cc02f2643cf6",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005120/ttrkma7owx5bmzxzmctw.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005143/j9vraavxewsaizlwgtu9.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005144/edha47m13tnnwazwqhub.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005145/lzusavkqfjtkwizkh5jw.png"
+      ]
+    },
+    {
+      "id": "9ac3af3f-e0f5-4182-902f-42dc01a09d55",
+      "createdAt": "2023-02-22T01:48:25+07:00",
+      "updatedAt": "2023-02-22T01:48:25+07:00",
+      "title": "Bộ câu hỏi phỏng vấn CSS phần 1",
+      "content": "CSS là gì?\nCascading Style Sheets (thường được gọi đơn giản là CSS ) là ngôn ngữ được sử dụng để giải thích và mô tả cách thức những cái được viết bằng ngôn ngữ đánh dấu (như HTML) nên được hiển thị.\n\nNói một cách đơn giản, CSS được sử dụng để trực quan hóa những thứ được viết bằng HTML, chẳng hạn như hình ảnh, phông chữ, hình nền, v.v.\n\nKhi nói đến các câu hỏi phỏng vấn CSS cơ bản như vậy, các nhà tuyển dụng thường tìm kiếm những người có thể giải thích bằng ngôn từ của chính họ chứ không phải là đọc thuộc lòng như robot. Đó là lý do tại sao bạn nên cố gắng học CSS từ các định nghĩa đơn giản nhất!\n\nCSS \"framework\" là gì?\nTrong CSS, các khung framework đơn giản là các thư viện của các tệp được tạo trước có thể được sử dụng trong thiết kế các trang web yêu cầu một số thiết kế CSS mặc định, phổ biến hơn.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "efea74b6-2ce5-4fd4-a69a-f36a652e7a5e",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005282/yms7uelryaocilznbzxp.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005302/pnm5ksz7ikmmoy9huarw.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005304/ordj36shbaw6muusvazc.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005304/kyemka82ks2vr8r3uezb.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005305/f5a4i98o9fj4isjqvtgt.png"
+      ]
+    },
+    {
+      "id": "b6694c7b-247d-44d5-8d06-49fcddff5c13",
+      "createdAt": "2023-02-22T01:48:25+07:00",
+      "updatedAt": "2023-02-22T01:48:25+07:00",
+      "title": "Bộ câu hỏi phỏng vấn CSS phần 2",
+      "content": "CSS là gì?\nCascading Style Sheets (thường được gọi đơn giản là CSS ) là ngôn ngữ được sử dụng để giải thích và mô tả cách thức những cái được viết bằng ngôn ngữ đánh dấu (như HTML) nên được hiển thị.\n\nNói một cách đơn giản, CSS được sử dụng để trực quan hóa những thứ được viết bằng HTML, chẳng hạn như hình ảnh, phông chữ, hình nền, v.v.\n\nKhi nói đến các câu hỏi phỏng vấn CSS cơ bản như vậy, các nhà tuyển dụng thường tìm kiếm những người có thể giải thích bằng ngôn từ của chính họ chứ không phải là đọc thuộc lòng như robot. Đó là lý do tại sao bạn nên cố gắng học CSS từ các định nghĩa đơn giản nhất!\n\nCSS \"framework\" là gì?\nTrong CSS, các khung framework đơn giản là các thư viện của các tệp được tạo trước có thể được sử dụng trong thiết kế các trang web yêu cầu một số thiết kế CSS mặc định, phổ biến hơn.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "efea74b6-2ce5-4fd4-a69a-f36a652e7a5e",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005282/yms7uelryaocilznbzxp.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005302/pnm5ksz7ikmmoy9huarw.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005304/ordj36shbaw6muusvazc.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005304/kyemka82ks2vr8r3uezb.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005305/f5a4i98o9fj4isjqvtgt.png"
+      ]
+    },
+    {
+      "id": "384ad238-b845-49c6-bbcd-82ec0d169c42",
+      "createdAt": "2023-02-22T01:50:29+07:00",
+      "updatedAt": "2023-02-22T01:50:29+07:00",
+      "title": "Bộ câu hỏi phỏng vấn PHP phần 1",
+      "content": "Hằng trong PHP khác gì so với biến? Nếu 1 hằng được định nghĩa 2 lần, thì liệu có bị lỗi không?\nHằng và biến trong PHP là khái niệm khác nhau:\n\nĐầu tiên khác nhau là cách khai báo:\nBiến thì chỉ cần dùng ký tự $ để gắn hoặc lấy giá trị.\nHằng dùng hàm define() gắn giá trị và dùng constant() để lấy giá trị.\nĐiểm khác biệt lớn nhất là hằng là không thể thay đổi trong suốt quá trình chạy chương trình, biến thì có. Nêu 1 hằng được định nghĩa 2 lần thì chương trình vẫn chạy được bình thường tuy nhiên hằng chỉ có giá trị của lần định nghĩa đầu tiên.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "d0f2aca9-5485-45aa-83ea-03716ee5559c",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005406/oi97nmhstautpd3hc5pf.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005424/nkaqqpy7hxmgjuppyg2k.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005425/fblz6wmc4lqf2rkcocpz.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005426/clilz4uztxlzyjmo0grf.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005427/iydutf3dgi3278233wla.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005428/wkivcyycn8ig6dank4ee.png"
+      ]
+    },
+    {
+      "id": "f9a3a902-fa87-4d42-9d59-dbf37fa96446",
+      "createdAt": "2023-02-22T01:50:29+07:00",
+      "updatedAt": "2023-02-22T01:50:29+07:00",
+      "title": "Bộ câu hỏi phỏng vấn PHP phần 2",
+      "content": "Hằng trong PHP khác gì so với biến? Nếu 1 hằng được định nghĩa 2 lần, thì liệu có bị lỗi không?\nHằng và biến trong PHP là khái niệm khác nhau:\n\nĐầu tiên khác nhau là cách khai báo:\nBiến thì chỉ cần dùng ký tự $ để gắn hoặc lấy giá trị.\nHằng dùng hàm define() gắn giá trị và dùng constant() để lấy giá trị.\nĐiểm khác biệt lớn nhất là hằng là không thể thay đổi trong suốt quá trình chạy chương trình, biến thì có. Nêu 1 hằng được định nghĩa 2 lần thì chương trình vẫn chạy được bình thường tuy nhiên hằng chỉ có giá trị của lần định nghĩa đầu tiên.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "d0f2aca9-5485-45aa-83ea-03716ee5559c",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005406/oi97nmhstautpd3hc5pf.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005424/nkaqqpy7hxmgjuppyg2k.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005425/fblz6wmc4lqf2rkcocpz.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005426/clilz4uztxlzyjmo0grf.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005427/iydutf3dgi3278233wla.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005428/wkivcyycn8ig6dank4ee.png"
+      ]
+    },
+    {
+      "id": "b22612ad-e527-4730-a3f8-48cb983c115c",
+      "createdAt": "2023-02-22T01:50:29+07:00",
+      "updatedAt": "2023-02-22T01:50:29+07:00",
+      "title": "Bộ câu hỏi phỏng vấn PHP phần 3",
+      "content": "Hằng trong PHP khác gì so với biến? Nếu 1 hằng được định nghĩa 2 lần, thì liệu có bị lỗi không?\nHằng và biến trong PHP là khái niệm khác nhau:\n\nĐầu tiên khác nhau là cách khai báo:\nBiến thì chỉ cần dùng ký tự $ để gắn hoặc lấy giá trị.\nHằng dùng hàm define() gắn giá trị và dùng constant() để lấy giá trị.\nĐiểm khác biệt lớn nhất là hằng là không thể thay đổi trong suốt quá trình chạy chương trình, biến thì có. Nêu 1 hằng được định nghĩa 2 lần thì chương trình vẫn chạy được bình thường tuy nhiên hằng chỉ có giá trị của lần định nghĩa đầu tiên.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "d0f2aca9-5485-45aa-83ea-03716ee5559c",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005406/oi97nmhstautpd3hc5pf.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005424/nkaqqpy7hxmgjuppyg2k.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005425/fblz6wmc4lqf2rkcocpz.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005426/clilz4uztxlzyjmo0grf.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005427/iydutf3dgi3278233wla.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005428/wkivcyycn8ig6dank4ee.png"
+      ]
+    },
+    {
+      "id": "297c24cd-31a1-4506-951e-af1e6f8d42d4",
+      "createdAt": "2023-02-22T01:50:29+07:00",
+      "updatedAt": "2023-02-22T01:50:29+07:00",
+      "title": "Bộ câu hỏi phỏng vấn PHP phần 4",
+      "content": "Hằng trong PHP khác gì so với biến? Nếu 1 hằng được định nghĩa 2 lần, thì liệu có bị lỗi không?\nHằng và biến trong PHP là khái niệm khác nhau:\n\nĐầu tiên khác nhau là cách khai báo:\nBiến thì chỉ cần dùng ký tự $ để gắn hoặc lấy giá trị.\nHằng dùng hàm define() gắn giá trị và dùng constant() để lấy giá trị.\nĐiểm khác biệt lớn nhất là hằng là không thể thay đổi trong suốt quá trình chạy chương trình, biến thì có. Nêu 1 hằng được định nghĩa 2 lần thì chương trình vẫn chạy được bình thường tuy nhiên hằng chỉ có giá trị của lần định nghĩa đầu tiên.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "d0f2aca9-5485-45aa-83ea-03716ee5559c",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005406/oi97nmhstautpd3hc5pf.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005424/nkaqqpy7hxmgjuppyg2k.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005425/fblz6wmc4lqf2rkcocpz.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005426/clilz4uztxlzyjmo0grf.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005427/iydutf3dgi3278233wla.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005428/wkivcyycn8ig6dank4ee.png"
+      ]
+    },
+    {
+      "id": "227f014f-717d-4dc0-9d2e-7b9f28875e7f",
+      "createdAt": "2023-02-22T01:50:29+07:00",
+      "updatedAt": "2023-02-22T01:50:29+07:00",
+      "title": "Bộ câu hỏi phỏng vấn PHP phần 5",
+      "content": "Hằng trong PHP khác gì so với biến? Nếu 1 hằng được định nghĩa 2 lần, thì liệu có bị lỗi không?\nHằng và biến trong PHP là khái niệm khác nhau:\n\nĐầu tiên khác nhau là cách khai báo:\nBiến thì chỉ cần dùng ký tự $ để gắn hoặc lấy giá trị.\nHằng dùng hàm define() gắn giá trị và dùng constant() để lấy giá trị.\nĐiểm khác biệt lớn nhất là hằng là không thể thay đổi trong suốt quá trình chạy chương trình, biến thì có. Nêu 1 hằng được định nghĩa 2 lần thì chương trình vẫn chạy được bình thường tuy nhiên hằng chỉ có giá trị của lần định nghĩa đầu tiên.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "d0f2aca9-5485-45aa-83ea-03716ee5559c",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005406/oi97nmhstautpd3hc5pf.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005424/nkaqqpy7hxmgjuppyg2k.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005425/fblz6wmc4lqf2rkcocpz.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005426/clilz4uztxlzyjmo0grf.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005427/iydutf3dgi3278233wla.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005428/wkivcyycn8ig6dank4ee.png"
+      ]
+    },
+    {
+      "id": "18332232-b770-4a30-b1e7-59ba952271e3",
+      "createdAt": "2023-02-22T01:50:29+07:00",
+      "updatedAt": "2023-02-22T01:50:29+07:00",
+      "title": "Bộ câu hỏi phỏng vấn PHP phần 6",
+      "content": "Hằng trong PHP khác gì so với biến? Nếu 1 hằng được định nghĩa 2 lần, thì liệu có bị lỗi không?\nHằng và biến trong PHP là khái niệm khác nhau:\n\nĐầu tiên khác nhau là cách khai báo:\nBiến thì chỉ cần dùng ký tự $ để gắn hoặc lấy giá trị.\nHằng dùng hàm define() gắn giá trị và dùng constant() để lấy giá trị.\nĐiểm khác biệt lớn nhất là hằng là không thể thay đổi trong suốt quá trình chạy chương trình, biến thì có. Nêu 1 hằng được định nghĩa 2 lần thì chương trình vẫn chạy được bình thường tuy nhiên hằng chỉ có giá trị của lần định nghĩa đầu tiên.",
+      "authorName": "Truong Dev",
+      "categoryPostId": "d0f2aca9-5485-45aa-83ea-03716ee5559c",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005406/oi97nmhstautpd3hc5pf.png",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005424/nkaqqpy7hxmgjuppyg2k.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005425/fblz6wmc4lqf2rkcocpz.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005426/clilz4uztxlzyjmo0grf.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005427/iydutf3dgi3278233wla.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677005428/wkivcyycn8ig6dank4ee.png"
       ]
     }
   ],
   "projects": [
     {
-      "id": "97b30aa1-c526-4758-994b-4e583632c7da",
-      "createdAt": "2023-02-15T11:37:17+07:00",
-      "updatedAt": "2023-02-15T21:07:31+07:00",
-      "name": "Dev Food",
-      "description": "Day la mot du an ca nhan do toi va team thuc hien",
-      "url": "https://github.com/typicode/json-server",
-      "repository": "https://github.com/typicode/json-server",
-      "technology": "React, NodeJS, Mysql",
-      "categoryProjectId": "f814c1c2-baa7-413e-beb2-facacd1e528b",
-      "images": [
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676435836/kzddtjs6lfgrz3bsw5g3.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676435837/bijfe3rexyjanu0ikmym.png"
+      "id": "97403101-7eee-4fe4-81ce-c3eccb377964",
+      "createdAt": "2023-02-22T02:09:40+07:00",
+      "updatedAt": "2023-02-22T02:09:40+07:00",
+      "name": "Moonboard – Admin Dashboard & UI Kit + Charts Kit 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, arcu tortor, feugiat in elit. Hendrerit sit suspendisse eget cras suspendisse aenean. Donec nunc quis sit augue malesuada nullam sit tincidunt. Dictum vel egestas pellentesque ut nunc lorem ut tortor at.\n\nScelerisque ipsum pretium augue neque at. Bibendum semper ipsum arcu, nibh blandit facilisi. Quis dictum ornare ultricies porta lectus in metus, purus facilisi. Egestas amet, enim in maecenas ultrices. Ornare donec volutpat enim at eget habitant eleifend. Enim, nisl porttitor egestas etiam a, magna neque.",
+      "url": "https://github.com/",
+      "repository": "https://github.com/",
+      "technology": "React, Nodejs, Mongodb",
+      "categoryProjectId": "199d32cf-c9b4-4011-93ab-fc95c9cea229",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006580/ylbtkvptrfskbjvlap4t.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006572/nhrgie2r8drhxq12hlbq.jpg",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006573/xcuoxll9ll1gwedustrq.jpg",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006574/qkpdnxa7yeigddl71k0n.jpg"
       ]
     },
     {
-      "id": "381d5703-c487-4efb-8504-0ff421b98b88",
-      "createdAt": "2023-02-15T11:40:24+07:00",
-      "updatedAt": "2023-02-15T21:08:30+07:00",
-      "name": "Landing Page",
-      "description": "Du An Ca Nhan",
-      "url": "https://github.com/typicode/json-server",
-      "repository": "https://github.com/typicode/json-server",
-      "technology": "React, NodeJS, Mysql",
-      "categoryProjectId": "a7af54ae-c1fc-4f62-94f4-cbc63f199f7a",
-      "images": [
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676436022/jxaqpawanertwzjnevgj.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676436023/ymvqzexd7zjedxza8dou.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676436024/ok2thw23ixzv6xajnmli.png"
+      "id": "d9229337-dc5e-43a8-8250-3a5eeb59ccdb",
+      "createdAt": "2023-02-22T02:09:40+07:00",
+      "updatedAt": "2023-02-22T02:09:40+07:00",
+      "name": "Moonboard – Admin Dashboard & UI Kit + Charts Kit 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, arcu tortor, feugiat in elit. Hendrerit sit suspendisse eget cras suspendisse aenean. Donec nunc quis sit augue malesuada nullam sit tincidunt. Dictum vel egestas pellentesque ut nunc lorem ut tortor at.\n\nScelerisque ipsum pretium augue neque at. Bibendum semper ipsum arcu, nibh blandit facilisi. Quis dictum ornare ultricies porta lectus in metus, purus facilisi. Egestas amet, enim in maecenas ultrices. Ornare donec volutpat enim at eget habitant eleifend. Enim, nisl porttitor egestas etiam a, magna neque.",
+      "url": "https://github.com/",
+      "repository": "https://github.com/",
+      "technology": "React, Nodejs, Mongodb",
+      "categoryProjectId": "199d32cf-c9b4-4011-93ab-fc95c9cea229",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006580/ylbtkvptrfskbjvlap4t.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006572/nhrgie2r8drhxq12hlbq.jpg",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006573/xcuoxll9ll1gwedustrq.jpg",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006574/qkpdnxa7yeigddl71k0n.jpg"
       ]
     },
     {
-      "id": "04374920-39cb-431e-ab3e-3fa56655c170",
-      "createdAt": "2023-02-15T12:56:45+07:00",
-      "updatedAt": "2023-02-15T13:06:38+07:00",
-      "name": "Du An Mau",
-      "description": "abc",
+      "id": "1d1edc7d-3d95-40b9-b3d4-a77d586f651c",
+      "createdAt": "2023-02-22T02:09:40+07:00",
+      "updatedAt": "2023-02-22T02:09:40+07:00",
+      "name": "Moonboard – Admin Dashboard & UI Kit + Charts Kit 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, arcu tortor, feugiat in elit. Hendrerit sit suspendisse eget cras suspendisse aenean. Donec nunc quis sit augue malesuada nullam sit tincidunt. Dictum vel egestas pellentesque ut nunc lorem ut tortor at.\n\nScelerisque ipsum pretium augue neque at. Bibendum semper ipsum arcu, nibh blandit facilisi. Quis dictum ornare ultricies porta lectus in metus, purus facilisi. Egestas amet, enim in maecenas ultrices. Ornare donec volutpat enim at eget habitant eleifend. Enim, nisl porttitor egestas etiam a, magna neque.",
+      "url": "https://github.com/",
+      "repository": "https://github.com/",
+      "technology": "React, Nodejs, Mongodb",
+      "categoryProjectId": "199d32cf-c9b4-4011-93ab-fc95c9cea229",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006580/ylbtkvptrfskbjvlap4t.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006572/nhrgie2r8drhxq12hlbq.jpg",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006573/xcuoxll9ll1gwedustrq.jpg",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006574/qkpdnxa7yeigddl71k0n.jpg"
+      ]
+    },
+    {
+      "id": "858c7be4-3b17-470f-813d-5b414ee35331",
+      "createdAt": "2023-02-22T02:13:23+07:00",
+      "updatedAt": "2023-02-22T02:13:23+07:00",
+      "name": "Dev Food 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, arcu tortor, feugiat in elit. Hendrerit sit suspendisse eget cras suspendisse aenean. Donec nunc quis sit augue malesuada nullam sit tincidunt. Dictum vel egestas pellentesque ut nunc lorem ut tortor at.\n\nScelerisque ipsum pretium augue neque at. Bibendum semper ipsum arcu, nibh blandit facilisi. Quis dictum ornare ultricies porta lectus in metus, purus facilisi. Egestas amet, enim in maecenas ultrices. Ornare donec volutpat enim at eget habitant eleifend. Enim, nisl porttitor egestas etiam a, magna neque.",
       "url": "https://github.com/typicode/json-server",
       "repository": "https://github.com/typicode/json-server",
       "technology": "React, Nodejs, Mongodb",
-      "categoryProjectId": "f814c1c2-baa7-413e-beb2-facacd1e528b",
-      "images": [
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676440594/xu1fpifqtixwvm01y4cq.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676440602/xdfacpnkschm2rjvezez.png",
-        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676440605/cmnnhp2mzjn7ilzo9sbi.png"
+      "categoryProjectId": "87434cd8-f921-482f-b422-39c89662ec51",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006751/bkr40d5ad2gxmauzplvl.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006798/gyfv3xpeojiwuifh61bx.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006799/bpeqpnfovzmhlokvp0de.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006800/oagvclulh4a9vuimwcsl.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006802/xlzgif880yegj9avjbmg.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006803/abojbxs7glxxyacahpyq.png"
       ]
     },
     {
-      "id": "3e9cdb57-6656-46d9-8dfb-5bd63fd99572",
-      "createdAt": "2023-02-19T16:24:19+07:00",
-      "updatedAt": "2023-02-19T16:24:19+07:00",
-      "name": "",
-      "description": "",
-      "url": "",
-      "repository": "",
-      "technology": "",
-      "categoryProjectId": "f814c1c2-baa7-413e-beb2-facacd1e528b",
-      "images": []
+      "id": "dbb178ff-1eba-4fee-89b8-11c062fa35d0",
+      "createdAt": "2023-02-22T02:13:23+07:00",
+      "updatedAt": "2023-02-22T02:13:23+07:00",
+      "name": "Dev Food 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, arcu tortor, feugiat in elit. Hendrerit sit suspendisse eget cras suspendisse aenean. Donec nunc quis sit augue malesuada nullam sit tincidunt. Dictum vel egestas pellentesque ut nunc lorem ut tortor at.\n\nScelerisque ipsum pretium augue neque at. Bibendum semper ipsum arcu, nibh blandit facilisi. Quis dictum ornare ultricies porta lectus in metus, purus facilisi. Egestas amet, enim in maecenas ultrices. Ornare donec volutpat enim at eget habitant eleifend. Enim, nisl porttitor egestas etiam a, magna neque.",
+      "url": "https://github.com/typicode/json-server",
+      "repository": "https://github.com/typicode/json-server",
+      "technology": "React, Nodejs, Mongodb",
+      "categoryProjectId": "87434cd8-f921-482f-b422-39c89662ec51",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006751/bkr40d5ad2gxmauzplvl.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006798/gyfv3xpeojiwuifh61bx.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006799/bpeqpnfovzmhlokvp0de.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006800/oagvclulh4a9vuimwcsl.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006802/xlzgif880yegj9avjbmg.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006803/abojbxs7glxxyacahpyq.png"
+      ]
+    },
+    {
+      "id": "0ab50496-7bca-468f-b664-78b82cdc83dc",
+      "createdAt": "2023-02-22T02:13:23+07:00",
+      "updatedAt": "2023-02-22T02:13:23+07:00",
+      "name": "Dev Food 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, arcu tortor, feugiat in elit. Hendrerit sit suspendisse eget cras suspendisse aenean. Donec nunc quis sit augue malesuada nullam sit tincidunt. Dictum vel egestas pellentesque ut nunc lorem ut tortor at.\n\nScelerisque ipsum pretium augue neque at. Bibendum semper ipsum arcu, nibh blandit facilisi. Quis dictum ornare ultricies porta lectus in metus, purus facilisi. Egestas amet, enim in maecenas ultrices. Ornare donec volutpat enim at eget habitant eleifend. Enim, nisl porttitor egestas etiam a, magna neque.",
+      "url": "https://github.com/typicode/json-server",
+      "repository": "https://github.com/typicode/json-server",
+      "technology": "React, Nodejs, Mongodb",
+      "categoryProjectId": "87434cd8-f921-482f-b422-39c89662ec51",
+      "image": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006751/bkr40d5ad2gxmauzplvl.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006798/gyfv3xpeojiwuifh61bx.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006799/bpeqpnfovzmhlokvp0de.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006800/oagvclulh4a9vuimwcsl.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006802/xlzgif880yegj9avjbmg.png",
+        "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1677006803/abojbxs7glxxyacahpyq.png"
+      ]
     }
   ],
-  "comments": []
+  "comments": [],
+  "profile": {
+    "name": "Truong Nguyen",
+    "email": "truongmoba157@gmail.com",
+    "phone": "0343559069",
+    "brithday": "05/09/2009",
+    "cv": "https://drive.google.com/drive/u/0/my-drive",
+    "location": "Ba Vi, Ha Noi",
+    "facebook": "https://www.facebook.com/nguyenvana",
+    "github": "https://github.com/nguyenvana",
+    "instagram": "https://www.instagram.com/nguyenvana",
+    "introduction": "Tôi là sinh viên đang sinh sống và học tại Hà Nội, chuyên ngành lập trình Web. Tôi thích biến nhưng vấn đề phức tạp thành những thiết kế đơn giản và đẹp mắt. <br> <br>",
+    "avatar": "https://res.cloudinary.com/dgpzzy5sg/image/upload/v1676976946/%E1%BA%A3nh_b%C3%ACa_rzsg4r.jpg",
+    "currentJobs": [
+      {
+        "title": "Web Design",
+        "desc": "Lập trình viên thiết kế trang web",
+        "icon": "<i class='fa-solid fa-desktop'></i>"
+      },
+      {
+        "title": "Web Design",
+        "desc": "Lập trình viên thiết kế trang web",
+        "icon": "<i class='fa-solid fa-desktop'></i>"
+      },
+      {
+        "title": "Web Design",
+        "desc": "Lập trình viên thiết kế trang web",
+        "icon": "<i class='fa-solid fa-desktop'></i>"
+      },
+      {
+        "title": "Web Design",
+        "desc": "Lập trình viên thiết kế trang web",
+        "icon": "<i class='fa-solid fa-desktop'></i>"
+      }
+    ]
+  }
 }

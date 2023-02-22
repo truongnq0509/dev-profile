@@ -2,6 +2,7 @@ import { html } from "../../../lib"
 import classNames from "classnames/bind"
 import styles from "./Resume.module.scss"
 import { Skill } from "../../../components/Skill"
+import { useTitle } from "../../../lib"
 
 const cx = classNames.bind(styles)
 
@@ -99,6 +100,8 @@ const SKILL = [
 ]
 
 const ResumePage = () => {
+	const [title, setTitle] = useTitle("Truong Nguyen | Resume")
+
 	return html` <div class="${cx("main")}">
 		<h1 class="${cx("title")}">Resume</h1>
 		<div class="${cx("content")}">

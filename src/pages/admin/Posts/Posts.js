@@ -5,6 +5,7 @@ import { getPosts as apiGetPosts, deletePost as apiDeletoPost } from "../../../s
 import styles from "./Posts.module.scss"
 import moment from "moment"
 import { Loading } from "../../../components/Loading"
+import { ToastMessage } from "../../../components/ToastMessage"
 
 const cx = classNames.bind(styles)
 
@@ -38,6 +39,19 @@ const Posts = () => {
 					await apiDeletoPost(id)
 					setPosts(newPosts)
 					setIsLoading(false)
+					ToastMessage({
+						title: "Thành Công",
+						type: "success",
+						content: "Đã xóa bài viết thành công",
+						duration: 1000,
+					})
+				} else {
+					ToastMessage({
+						title: "Thất Bại",
+						type: "danger",
+						content: "Hành động thực hiện đã thất bại!!!",
+						duration: 1000,
+					})
 				}
 			})
 		}

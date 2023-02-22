@@ -4,11 +4,13 @@
 	--text-white: #ffffff;
 	--text-gray: #dee2e6;
 	--text-pink: #ffc9c9;
+	--text-gray: #d6d6d6;
 
 	--color-bg-100: #2b2b31;
 	--color-bg-200: #28282d;
 	--color-bg-300: #121212;
 	--color-gradient: linear-gradient(90deg, #ee9ca7 0%, #ffdde1 100%);
+	--bg-red: #ff8787;
 
 	--color-info: #3796f6;
 	--color-danger: #ec547a;
@@ -17,7 +19,7 @@
 	--rgba-danger: rgba(236, 84, 122, 0.08);
 	--rgba-success: rgba(91, 206, 174, 0.08);
 
-	--border-color: #ffe3e3;
+	--border-color: #ffffff;
 
 	--bg-overlay: rgba(43, 43, 49, 0.8);
 	--box-shadow: 0 0 20px 0 rgb(238 156 167 / 50%);
@@ -40,4 +42,31 @@ html {
 
 body {
 	background-color: var(--color-bg-100);
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+#toast {
+	display: block;
+	position: fixed;
+	right: 30px;
+	top: 16px;
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(calc(100% + 32px));
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeOut {
+	to {
+		opacity: 0;
+	}
 }

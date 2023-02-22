@@ -11,7 +11,7 @@ export const getCategoryProjects = async () => {
 
 export const getCategoryProject = async (id) => {
 	try {
-		const response = await httpResquest.get(`/categoryProjects/${id}`)
+		const response = await httpResquest.get(`/categoryProjects/${id}?_embed=projects`)
 		return response
 	} catch (error) {
 		console.log(error)

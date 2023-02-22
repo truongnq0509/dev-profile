@@ -41,30 +41,6 @@
 		}
 	}
 
-	&:hover {
-		animation-play-state: paused;
-		filter: drop-shadow(0 0 10px var(--color));
-	}
-
-	&:hover + .title + .icon {
-		filter: drop-shadow(0 0 0.5px var(--color));
-		transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
-		animation: wave 1s ease-in-out infinite;
-
-		svg {
-			fill: var(--color);
-		}
-	}
-
-	&:hover + .title {
-		opacity: 1;
-		color: var(--color);
-		text-shadow: 0 0 3px var(--color);
-		transform: rotateY(30deg) skewY(-24deg) translateY(-50px);
-		transition-delay: 0.1s;
-		animation: wave 1s ease-in-out infinite;
-	}
-
 	@keyframes wave {
 		0%,
 		100% {
@@ -88,16 +64,22 @@
 	transition: 0.5s ease-in-out;
 }
 
-.title,
-.percent {
-	opacity: 0;
+.title {
 	font-size: 1.4rem;
 	letter-spacing: 1px;
 	font-weight: 500;
-	transform: rotateX(30deg) skewY(-24deg) translateY(0);
+	opacity: 1;
+	color: var(--color);
+	text-shadow: 0 0 3px var(--color);
+	transform: rotateY(30deg) skewY(-24deg) translateY(-50px);
+	// animation: wave 1s ease-in-out infinite;
 }
 
 .icon {
+	filter: drop-shadow(0 0 0.5px var(--color));
+	transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+	// animation: wave 1s ease-in-out infinite;
+
 	svg {
 		width: 48px;
 		height: 48px;

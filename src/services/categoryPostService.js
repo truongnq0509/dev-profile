@@ -11,7 +11,7 @@ export const getCategoryPosts = async () => {
 
 export const getCategoryPost = async (id) => {
 	try {
-		const response = await httpResquest.get(`/categoryPosts/${id}`)
+		const response = await httpResquest.get(`/categoryPosts/${id}?_embed=posts`)
 		return response
 	} catch (error) {
 		console.log(error)

@@ -2,7 +2,7 @@ import * as httpResquest from "../utils/httpResquest"
 
 export const getPosts = async () => {
 	try {
-		const response = await httpResquest.get("/posts?_expand=categoryPost")
+		const response = await httpResquest.get("/posts?_expand=categoryPost&_sort=createdAt&_order=desc")
 		return response
 	} catch (error) {
 		console.log(error)

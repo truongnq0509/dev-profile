@@ -7,6 +7,7 @@ import {
 } from "../../../services/categoryProjectService"
 import styles from "./CategoryProjects.module.scss"
 import { Loading } from "../../../components/Loading"
+import { ToastMessage } from "../../../components/ToastMessage"
 
 const cx = classNames.bind(styles)
 
@@ -40,6 +41,19 @@ const CategoryProjects = () => {
 					await apiDeleteCategoryProjects(id)
 					setCategories(newCategories)
 					setIsLoading(false)
+					ToastMessage({
+						title: "Thành Công",
+						type: "success",
+						content: "Đã xóa dự án thành công",
+						duration: 1000,
+					})
+				} else {
+					ToastMessage({
+						title: "Thất Bại",
+						type: "danger",
+						content: "Hành động thực hiện đã thất bại!!!",
+						duration: 1000,
+					})
 				}
 			})
 		}

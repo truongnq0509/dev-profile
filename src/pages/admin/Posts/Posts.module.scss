@@ -62,7 +62,7 @@
 
 	&__cover {
 		position: relative;
-		max-width: 290px;
+		max-width: 300px;
 
 		&.hidden {
 			.form__file {
@@ -72,10 +72,148 @@
 	}
 
 	&__content {
-		width: calc(100% - 290px);
+		width: calc(100% - 300px);
 	}
 
 	&__file {
+		label {
+			position: absolute;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 2;
+			cursor: pointer;
+			margin: 0;
+			font-size: 16px;
+			color: rgba(255, 255, 255, 0.5);
+			transition: 0.4s ease;
+			border: 0.5px solid transparent;
+			background-color: var(--color-bg-100);
+			border-radius: 4px;
+
+			&:hover {
+				color: var(--text-white);
+				border-color: #ee9ca7;
+			}
+
+			svg {
+				fill: var(--text-pink);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 4px;
+			}
+		}
+
+		.form__mess {
+			position: absolute;
+			z-index: 2;
+			bottom: -25px;
+			left: 0;
+		}
+
+		input {
+			position: absolute;
+			left: -9999px;
+			opacity: 0;
+		}
+	}
+
+	&__preview {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	&__input {
+		border: 0.5px solid transparent;
+		height: 50px;
+		color: var(--text-white);
+		padding: 0 20px;
+		background-color: var(--color-bg-100);
+		width: 100%;
+		font-size: 1.6rem;
+		border-radius: 4px;
+		transition: 0.4s ease;
+		outline: none;
+
+		&:hover {
+			color: var(--text-white);
+			border-color: #ee9ca7;
+		}
+
+		&:focus {
+			border-color: #ee9ca7;
+		}
+	}
+
+	&__textarea {
+		display: block;
+		border: 0.5px solid transparent;
+		height: 160px;
+		position: relative;
+		font-size: 1.6rem;
+		width: 100%;
+		color: var(--text-white);
+		padding: 15px 20px;
+		resize: none;
+		background-color: var(--color-bg-100);
+		margin: 20px 0;
+		border-radius: 4px;
+		transition: 0.4s ease;
+		outline: none;
+
+		&:hover {
+			color: var(--text-white);
+			border-color: #ee9ca7;
+		}
+
+		&:focus {
+			border-color: #ee9ca7;
+		}
+
+		& ~ .form__mess {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__select {
+		border: 0.5px solid transparent;
+		height: 50px;
+		color: var(--text-white);
+		padding: 0 20px;
+		background-color: var(--color-bg-100);
+		width: 100%;
+		font-size: 1.6rem;
+		border-radius: 4px;
+		transition: 0.4s ease;
+		outline: none;
+
+		&:hover {
+			color: var(--text-white);
+			border-color: #ee9ca7;
+		}
+
+		&:focus {
+			border-color: #ee9ca7;
+		}
+	}
+
+	&__covers {
+		position: relative;
+		max-width: 100%;
+		height: 260px;
+	}
+
+	&__files {
 		label {
 			position: absolute;
 			display: flex;
@@ -111,84 +249,25 @@
 			left: -9999px;
 			opacity: 0;
 		}
-	}
 
-	&__preview {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
-
-	&__input {
-		border: 0.5px solid transparent;
-		height: 50px;
-		color: var(--text-white);
-		padding: 0 20px;
-		background-color: var(--color-bg-100);
-		margin-bottom: 20px;
-		width: 100%;
-		font-size: 1.6rem;
-		border-radius: 4px;
-		transition: 0.4s ease;
-		outline: none;
-
-		&:hover {
-			color: var(--text-white);
-			border-color: #ee9ca7;
-		}
-
-		&:focus {
-			border-color: #ee9ca7;
+		& ~ .form__mess {
+			position: absolute;
+			z-index: 2;
+			bottom: -28px;
+			left: 0;
+			margin-bottom: 0;
 		}
 	}
 
-	&__textarea {
+	&__images {
+	}
+
+	&__mess {
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: var(--color-danger);
 		display: block;
-		border: 0.5px solid transparent;
-		height: 160px;
-		position: relative;
-		font-size: 1.6rem;
-		width: 100%;
-		color: var(--text-white);
-		padding: 15px 20px;
-		resize: none;
-		background-color: var(--color-bg-100);
-		margin-bottom: 20px;
-		border-radius: 4px;
-		transition: 0.4s ease;
-		outline: none;
-
-		&:hover {
-			color: var(--text-white);
-			border-color: #ee9ca7;
-		}
-
-		&:focus {
-			border-color: #ee9ca7;
-		}
-	}
-
-	&__select {
-		border: 0.5px solid transparent;
-		height: 50px;
-		color: var(--text-white);
-		padding: 0 20px;
-		background-color: var(--color-bg-100);
-		margin-bottom: 20px;
-		width: 100%;
-		font-size: 1.6rem;
-		border-radius: 4px;
-		transition: 0.4s ease;
-		outline: none;
-
-		&:hover {
-			color: var(--text-white);
-			border-color: #ee9ca7;
-		}
-
-		&:focus {
-			border-color: #ee9ca7;
-		}
+		margin-top: 12px;
 	}
 
 	.preview {

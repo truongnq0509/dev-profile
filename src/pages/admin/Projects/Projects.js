@@ -1,10 +1,11 @@
 import classNames from "classnames/bind"
 import Button from "../../../components/Button/Button"
 import { html, router, useEffect, useState, useTitle } from "../../../lib"
-import { getProjects as apiGetProjects, deleteProject as apiDeletoProject } from "../../../services/projectService"
+import { getProjects as apiGetProjects, deleteProject as apiDeleteProject } from "../../../services/projectService"
 import styles from "./Projects.module.scss"
 import moment from "moment"
 import { Loading } from "../../../components/Loading"
+import { ToastMessage } from "../../../components/ToastMessage"
 
 const cx = classNames.bind(styles)
 
@@ -33,11 +34,23 @@ const Projects = () => {
 				const confirm = window.confirm("Bạn có chắc muốn xóa không")
 
 				if (confirm) {
-					const newProjects = projects.filter((project) => project.id != id)
-					setIsLoading(true)
-					await apiDeletoProject(id)
+					const newProjects = projects.filter((project) => project.id !== id)
+					await apiDeleteProject(id)
 					setProjects(newProjects)
 					setIsLoading(false)
+					ToastMessage({
+						title: "Thành Công",
+						type: "success",
+						content: "Đã xóa dự án thành công",
+						duration: 1000,
+					})
+				} else {
+					ToastMessage({
+						title: "Thất Bại",
+						type: "danger",
+						content: "Hành động thực hiện đã thất bại!!!",
+						duration: 1000,
+					})
 				}
 			})
 		}
